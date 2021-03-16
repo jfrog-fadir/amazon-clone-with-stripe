@@ -4,7 +4,7 @@ node {
 
 
     parameters {
-        string (name: 'ART_URL', defaultValue: 'http://34.76.166.139:8081/artifactory', description: 'Artifactory where artifacts will be deployed/resolved')
+        string (name: 'ART_URL', defaultValue: 'http://localhost:8081/artifactory', description: 'Artifactory where artifacts will be deployed/resolved')
         string (name: 'ART_USER', defaultValue: 'admin', description: 'Artifactory user for deploy/resolve artifacts')
         string (name: 'ART_PASSWORD', defaultValue: 'Password1', description: 'Artifactory password for deploy/resolve artifacts')
         string (name: 'ART_RELEASE_REPO', defaultValue: 'mvn-libs-release', description: 'Virtual Repository where artifacts will be deployed/resolved (Releases)')
