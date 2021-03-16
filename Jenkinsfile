@@ -34,7 +34,7 @@ node {
 
         rtNpm.resolver repo: 'fadir-npm-remote', server: server
 
-        rtNpm.tool = NPM_TOOL // Tool name from Jenkins configuration
+        rtNpm.tool = "node6.9.1" // Tool name from Jenkins configuration
 
         buildInfo = Artifactory.newBuildInfo()
 
