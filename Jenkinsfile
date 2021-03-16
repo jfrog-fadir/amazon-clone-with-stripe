@@ -1,7 +1,6 @@
 
 
 node {
-      tools {nodejs "node6.9.1"}
 
 
     parameters {
