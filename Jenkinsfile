@@ -37,7 +37,6 @@ node {
 
         rtNpm.tool = 'node6.9.1' // Tool name from Jenkins configuration
 
-        buildInfo = Artifactory.newBuildInfo()
 
     }
 
