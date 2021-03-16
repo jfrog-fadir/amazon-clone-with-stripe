@@ -1,6 +1,8 @@
 
 
 node {
+      tools {nodejs "node6.9.1"}
+
 
     parameters {
         string (name: 'ART_URL', defaultValue: 'http://34.76.166.139:8081/artifactory', description: 'Artifactory where artifacts will be deployed/resolved')
@@ -34,7 +36,7 @@ node {
 
         rtNpm.resolver repo: 'fadir-npm-remote', server: server
 
-        rtNpm.tool = "node6.9.1" // Tool name from Jenkins configuration
+        rtNpm.tool = 'node6.9.1' // Tool name from Jenkins configuration
 
         buildInfo = Artifactory.newBuildInfo()
 
