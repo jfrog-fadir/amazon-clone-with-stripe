@@ -45,7 +45,7 @@ node {
 
     stage ('Install npm') {
 
-        rtNpm.install buildInfo: buildInfo
+        rtNpm.install buildInfo: buildInfo, path: 'npm-example'
 
     }
 
@@ -53,7 +53,7 @@ node {
 
     stage ('Publish npm') {
 
-        rtNpm.publish buildInfo: buildInfo
+        rtNpm.publish buildInfo: buildInfo, path: 'npm-example'
 
     }
 
