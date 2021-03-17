@@ -37,6 +37,7 @@ node {
 
         rtNpm.tool = 'node6.9.1' // Tool name from Jenkins configuration
 
+        buildInfo = Artifactory.newBuildInfo()
 
     }
 
@@ -44,7 +45,7 @@ node {
 
     stage ('Install npm') {
 
-        rtNpm.install buildInfo: buildInfo, path: 'npm-example'
+        rtNpm.install buildInfo: buildInfo
 
     }
 
@@ -52,7 +53,7 @@ node {
 
     stage ('Publish npm') {
 
-        rtNpm.publish buildInfo: buildInfo, path: 'npm-example'
+        rtNpm.publish buildInfo: buildInfo
 
     }
 
